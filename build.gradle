@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "https://maven.minecraftforge.net/"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+    }
+}
+
+repositories {
+    maven {
+        url 'https://jitpack.io'
+    }
+    maven {
+        name = "gt"
+        url = "https://gregtech.overminddl1.com/"
+    }
+}
+
+apply plugin: 'forge'
+
+version = "1.0"
+group = "insanity.mods"
+archivesBaseName = "ironbarrels"
+
+minecraft {
+    version = "1.7.10-10.13.4.1614-1.7.10"
+}
+
+processResources
+        {
+            exclude '**/*.xcf'
+            doLast {
+                def propsFile = new File(destinationDir, 'version.properties')
+                def properties = new Properties()
+                properties['IronBarrels.build.mcversion'] = project.minecraft.version
+                properties.store(propsFile.newWriter(), null)
+            }
+        }
+
+jar {
+    classifier = 'universal'
+    version = "${project.minecraft.version}-${project.version}"
+}
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'src'
+    version = "${project.minecraft.version}-${project.version}"
+}
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'deobf'
+    version = "${project.minecraft.version}-${project.version}"
+}
+
+artifacts {
+    archives sourceJar, deobfJar
+}

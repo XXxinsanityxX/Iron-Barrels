@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Iron Barrels",
+    "modid": "ironbarrels",
+    "version": "1.0",
+    "mcversion": "1.7.10",
+    "authorList": ["XxinsanityxX"],
+    "credits": "Roadhog360 (Et Futurum Requiem), Cpw (Iron Chests), TheCyanideX (Textures Inspiration)",
+    "description": "Like the Iron Chests Mod but for Barrels, It adds four tiers of Barrels Iron, Gold, Diamond and Obsidian(Blastproof). No crystal chest and dirt chest equivalent was added and the ability to upgrade existing barrels into better tiers is planned but not added yet as of 16/03/22"
+  }
+]

@@ -1,0 +1,8 @@
+# Container
+container.ironbarrels.barrel=Barrel
+
+# Blocks
+tile.ironBarrel.name=Iron Barrel
+tile.goldBarrel.name=Gold Barrel
+tile.diamondBarrel.name=Diamond Barrel
+tile.obsidianBarrel.name=Obsidian Barrel

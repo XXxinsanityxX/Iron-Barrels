@@ -1,0 +1,15 @@
+{
+  "block.barrel.close": {
+    "category": "block",
+    "sounds": [
+	"ironbarrels:barrel/close"
+    ]
+  },
+  "block.barrel.open": {
+    "category": "block",
+    "sounds": [
+    "ironbarrels:barrel/open1",
+    "ironbarrels:barrel/open2"
+    ]
+  }
+}
