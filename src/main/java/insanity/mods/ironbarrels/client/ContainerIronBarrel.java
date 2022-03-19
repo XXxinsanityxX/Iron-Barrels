@@ -9,7 +9,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-@ChestContainer(isLargeChest = true)
+@ChestContainer(isLargeChest = false)
 public class ContainerIronBarrel extends Container {
     private final IronBarrelType type;
     private final EntityPlayer player;
