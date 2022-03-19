@@ -170,7 +170,7 @@ public class TileEntityObsidianBarrel extends TileEntity implements IInventory {
 
     @Override
     public String getInventoryName() {
-        return type.name();
+        return "Obsidian Barrel";
     }
 
     @Override

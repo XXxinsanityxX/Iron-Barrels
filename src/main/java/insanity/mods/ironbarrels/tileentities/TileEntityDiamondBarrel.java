@@ -170,7 +170,7 @@ public class TileEntityDiamondBarrel extends TileEntity implements IInventory {
 
     @Override
     public String getInventoryName() {
-        return type.name();
+        return "Diamond Barrel";
     }
 
     @Override

@@ -61,7 +61,7 @@ public class ContainerIronBarrel extends Container {
         {
             for (int chestRow = 0; chestRow < type.getRowCount(); chestRow++) {
                 for (int chestCol = 0; chestCol < type.getRowLength(); chestCol++) {
-                    addSlotToContainer(type.makeSlot(chestInventory, chestCol + chestRow * type.getRowLength(), 12 + chestCol * 18, 8 + chestRow * 18));
+                    addSlotToContainer(type.makeSlot(chestInventory, chestCol + chestRow * type.getRowLength(), 8 + chestCol * 18, 18 + chestRow * 18));
                 }
             }
         }

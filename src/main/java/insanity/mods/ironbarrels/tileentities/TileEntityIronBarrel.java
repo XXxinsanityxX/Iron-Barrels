@@ -171,7 +171,7 @@ public class TileEntityIronBarrel extends TileEntity implements IInventory {
 
     @Override
     public String getInventoryName() {
-        return type.name();
+        return "Iron Barrel";
     }
 
     @Override
